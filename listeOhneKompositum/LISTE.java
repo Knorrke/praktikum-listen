@@ -60,11 +60,17 @@ public class LISTE
 
     //anzahlGeben
     public int anzahlGeben() {
-        return anfang.anzahlGeben();
+        if (!istLeer()){
+            return anfang.anzahlGeben();
+        }   
+        return 0;
     }
 
     //letzesElementLöschen
     public void letztesElementLöschen(){
-        anfang.letztesElementLöschen();
+        if (!istLeer()){
+            anfang.letztesElementLöschen();
+        }
+        return;
     }
 }

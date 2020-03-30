@@ -5,8 +5,14 @@ package listeMitKompositum;
  * Abstrakte Klasse mit Implementierungen Abschluss und Datenknoten.
  */
 abstract class KNOTEN
-{
+{    
     KNOTEN()
     {
     }
+    
+    public abstract int anzahlGeben();
+    public abstract boolean suchen(DATENELEMENT datenDrin);
+    public abstract DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu); 
+    
+    
 }

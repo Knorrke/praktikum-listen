@@ -8,7 +8,27 @@ package listeMitKompositum;
  */
 class DATENKNOTEN extends KNOTEN
 {
-    DATENKNOTEN()
+    KNOTEN nachfolger;
+    DATENELEMENT daten;
+    
+    DATENKNOTEN(KNOTEN nachfolgerNeu, DATENELEMENT datenNeu)
     {
+        nachfolger = nachfolgerNeu;
+        daten = datenNeu;
+    }
+    
+    public DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu){
+        nachfolger = nachfolger.endeEinfügen(datenNeu);
+        return this;
+    }
+    
+    public int anzahlGeben(){
+        //TODO
+        return 0;
+    }
+    
+    public boolean suchen(DATENELEMENT datenDrin){
+        //TODO
+        return true; 
     }
 }
