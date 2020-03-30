@@ -14,7 +14,17 @@ public class WARTESCHLANGE
         anfang = null;
         ende = null;
     }
-
+    
+    //getter
+    public KUNDE getAnfang(){
+        return anfang;
+    }
+    
+    public KUNDE getEnde(){
+      return ende;   
+    }
+    
+    
     //am Ende einfügen
     public void amEndeEinfuegen(KUNDE neuesEnde){
         if (ende != null){
