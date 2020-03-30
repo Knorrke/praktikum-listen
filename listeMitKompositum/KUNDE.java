@@ -25,8 +25,8 @@ class KUNDE implements DATENELEMENT
     }
     
     //ausgeben
-    void Ausgeben() {
-        System.out.println("Ich bin " + name);
+    public String Ausgeben() {
+        return ("Ich bin " + name + "\n");
     }
     
     void Beschweren() {

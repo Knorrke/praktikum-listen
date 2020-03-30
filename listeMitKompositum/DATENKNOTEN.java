@@ -47,7 +47,7 @@ class DATENKNOTEN extends KNOTEN
     }
 
     public String alleAusgeben(){
-        return daten.toString.concat(nachfolger.alleAusgeben());
+        return daten.Ausgeben().concat(nachfolger.alleAusgeben());
     }
 
     public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){

@@ -7,4 +7,5 @@ package listeMitKompositum;
 public interface DATENELEMENT
 {
     public int Vergleichen(DATENELEMENT daten);
+    public String Ausgeben();
 }
