@@ -50,6 +50,8 @@ public class WARTESCHLANGETest
         schlange.amEndeEinfuegen(helga);
         schlange.vorneEntfernen();
         assertEquals(schlange.getAnfang(), helga);
+        schlange.vorneEntfernen();
+        assertNull(schlange.getAnfang());
     }
 
     /**
