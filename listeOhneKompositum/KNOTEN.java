@@ -22,11 +22,16 @@ class KNOTEN
         daten = neueDaten;
     }
 
-    
     //Setter
     public void nachfolgerSetzen (KNOTEN neuerNachfolger)
     {
         nachfolger = neuerNachfolger;
+        return;
+    }
+
+    public void datenSetzen (DATENELEMENT neueDaten)
+    {
+        daten = neueDaten;
         return;
     }
 
@@ -36,9 +41,10 @@ class KNOTEN
         return nachfolger;
     }
 
-    //datenSetzen
-
-    //datenGeben
+    public DATENELEMENT datenGeben()
+    {
+        return daten;
+    }
 
     //anzahlGeben
 
