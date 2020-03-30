@@ -34,6 +34,11 @@ public class LISTETest
     {
         liste = new listeOhneKompositum.LISTE();
     }
+    
+    @Test 
+    public void testIstLeer(){
+     assertTrue(liste.istLeer());   
+    }
 
     /**
      * Gibt das Testgerüst wieder frei.

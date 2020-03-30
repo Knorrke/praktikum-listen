@@ -9,27 +9,53 @@ class KNOTEN
     KNOTEN nachfolger;
     DATENELEMENT daten;
 
+    //Konstruktoren
     KNOTEN()
     {
-        //todo
+        nachfolger = null;
+        daten = null;
     }
 
     KNOTEN(KNOTEN neuerNachfolger, DATENELEMENT neueDaten)
     {
-        //todo
+        nachfolger = neuerNachfolger;
+        daten = neueDaten;
     }
 
-    //nachfolgerSetzen
+    //Setter
+    public void nachfolgerSetzen (KNOTEN neuerNachfolger)
+    {
+        nachfolger = neuerNachfolger;
+        return;
+    }
 
-    //nachfolgerGeben
+    public void datenSetzen (DATENELEMENT neueDaten)
+    {
+        daten = neueDaten;
+        return;
+    }
 
-    //datenSetzen
+    //Getter
+    public KNOTEN nachfolgerGeben()
+    {
+        return nachfolger;
+    }
 
-    //datenGeben
-    
+    public DATENELEMENT datenGeben()
+    {
+        return daten;
+    }
+
     //anzahlGeben
-    
+    public int anzahlGeben() {
+        if (nachfolger == null) {
+            return 1;
+        } else {
+            return 1 + nachfolger.anzahlGeben();
+        }
+    }
     //amEndeEinfügen
+<<<<<<< HEAD
     void amEndeEinfuegen(DATENELEMENT neueDaten){
         if(nachfolger == null){
             nachfolger = new KNOTEN(null, neueDaten);
@@ -40,5 +66,16 @@ class KNOTEN
     }
     
     //letztesElementLöschen
+=======
+>>>>>>> 64cb6a8330e849e8be33ddd76d4dd2915c169dc0
 
+    //letztesElementLöschen
+    public KNOTEN letztesElementLöschen(){
+        if(nachfolger==null){
+            return null;
+        }
+        else{
+            return nachfolger.letztesElementLöschen();
+        }
+    }
 }
