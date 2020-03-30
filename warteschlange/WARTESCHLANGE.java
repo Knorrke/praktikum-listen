@@ -13,7 +13,11 @@ public class WARTESCHLANGE
         //TODO
     }
     
-    //AmEndeeinfügen
+    public void amEndeEinfuegen(KUNDE neuesEnde){
+        ende.setNachfolger(neuesEnde);
+        ende = neuesEnde;
+        return;
+    }
     
     //vorneentfernen
     
