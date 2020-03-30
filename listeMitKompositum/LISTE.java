@@ -40,14 +40,9 @@ public class LISTE
     //bestimmtesEntfernen
 
     //anPlatzEinfügen
-<<<<<<< HEAD
     public void anPlatzEinfügen(int platz, DATENELEMENT datenNeu) {
         anfang = anfang.anPlatzEinfügen(platz, datenNeu);
     }
-    
-=======
-
->>>>>>> 96929bc2113e5c87879412d20bf448962e4a8139
     //sortiertEinfügen
 
     public void endeEinfügen(DATENELEMENT datenNeu)

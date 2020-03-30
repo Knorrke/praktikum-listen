@@ -15,7 +15,7 @@ class KUNDE implements DATENELEMENT
         return name;
     }
     
-    int Vergleichen(DATENELEMENT vergleichsObjekt) {
+    public int Vergleichen(DATENELEMENT vergleichsObjekt) {
         if (!vergleichsobjekt instanceof KUNDE) {
             return 0;
         }
