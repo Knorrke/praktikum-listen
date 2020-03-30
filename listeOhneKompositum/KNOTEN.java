@@ -28,6 +28,13 @@ class KNOTEN
     //datenGeben
     
     //anzahlGeben
+    public int anzahlGeben() {
+        if (nachfolger == null) {
+            return 1;
+        } else {
+            return 1 + nachfolger.anzahlGeben();
+        }
+    }
     
     //amEndeEinfügen
     

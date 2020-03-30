@@ -21,5 +21,7 @@ public class LISTE
     //anfangGeben
         
     //anzahlGeben
-   
+    public int anzahlGeben() {
+        return anfang.anzahlGeben();
+    }
 }
