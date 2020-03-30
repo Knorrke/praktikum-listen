@@ -57,5 +57,12 @@ class KNOTEN
     //amEndeEinfügen
 
     //letztesElementLöschen
-
+    public KNOTEN letztesElementLöschen(){
+        if(nachfolger==null){
+            return null;
+        }
+        else{
+            return nachfolger.letztesElementLöschen();
+        }
+    }
 }
