@@ -16,7 +16,7 @@ class ABSCHLUSS extends KNOTEN
     public int anzahlGeben(){
         return 0;
     }
-    
+
     public boolean istLeer(){
         return true;
     }
@@ -24,16 +24,20 @@ class ABSCHLUSS extends KNOTEN
     public boolean suchen(DATENELEMENT datenDrin){
         return false; 
     }
-    
-     public DATENELEMENT datenGeben(){
+
+    public DATENELEMENT datenGeben(){
         return null;
     }
-    
+
     public KNOTEN nachfolgerGeben(){
         return this;
     }
-    
+
     public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){
         return this;
+    }
+
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT datenNeu) {
+        return new DATENKNOTEN(this, datenNeu);
     }
 }

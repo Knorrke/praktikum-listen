@@ -24,7 +24,7 @@ class DATENKNOTEN extends KNOTEN
     public int anzahlGeben(){
         return nachfolger.anzahlGeben() + 1;
     }
-    
+
     public boolean istLeer(){
         return false;
     }
@@ -47,11 +47,20 @@ class DATENKNOTEN extends KNOTEN
     }
 
     public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){
-        if(this.daten=daten){
+        if(this.daten==daten){
             return nachfolgerGeben();
         }
         else {
             nachfolger.bestimmtesEntfernen(daten);
+            return this;
+        }
+    }
+
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT daten) {
+        if (platz == 0) {
+            return new DATENKNOTEN(this, daten);
+        } else {
+            nachfolger = nachfolger.anPlatzEinfügen(platz - 1, daten);
             return this;
         }
     }

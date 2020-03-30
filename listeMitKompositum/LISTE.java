@@ -37,12 +37,17 @@ public class LISTE
     }
 
     //bestimmtesEntfernen
-    public boolean bestimmtesEntfernen(DATENELEMENT daten){
+    public void bestimmtesEntfernen(DATENELEMENT daten){
         anfang=anfang.bestimmtesEntfernen(daten);
     }
 
     //anPlatzEinfügen
+    public void anPlatzEinfügen(int platz, DATENELEMENT datenNeu) {
+        anfang = anfang.anPlatzEinfügen(platz, datenNeu);
+    }
+
     //sortiertEinfügen
+
     public void endeEinfügen(DATENELEMENT datenNeu)
     {
         anfang = anfang.endeEinfügen(datenNeu);
