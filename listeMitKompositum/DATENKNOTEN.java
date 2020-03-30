@@ -33,11 +33,22 @@ class DATENKNOTEN extends KNOTEN
             return nachfolger.suchen(datenDrin);   
         }
     }
-    
+
     public DATENELEMENT datenGeben(){
         return daten;
     }
+
     public KNOTEN nachfolgerGeben(){
         return nachfolger;
+    }
+
+    public DATENKNOTEN bestimmtesEntfernen(DATENELEMENT daten){
+        if(this.daten=daten){
+            return nachfolgerGeben();
+        }
+        else {
+            nachfolger.bestimmtesEntfernen(daten);
+            return this;
+        }
     }
 }

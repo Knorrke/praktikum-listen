@@ -29,4 +29,8 @@ class ABSCHLUSS extends KNOTEN
     public KNOTEN nachfolgerGeben(){
         return this;
     }
+    
+    public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){
+        return this;
+    }
 }

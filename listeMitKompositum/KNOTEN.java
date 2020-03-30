@@ -12,7 +12,8 @@ abstract class KNOTEN
     
     public abstract int anzahlGeben();
     public abstract boolean suchen(DATENELEMENT datenDrin);
-    public abstract DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu); 
+    public abstract DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu);
+    public abstract DATENKNOTEN bestimmtesEntfernen(DATENELEMENT daten);
     
     
 }

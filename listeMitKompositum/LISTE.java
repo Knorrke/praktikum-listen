@@ -6,12 +6,12 @@ package listeMitKompositum;
 public class LISTE
 {
     KNOTEN anfang;
-    
+
     public LISTE()
     {
         anfang = new ABSCHLUSS();
     }
-    
+
     //GetterSetter
     public boolean istLeer(){
         if (anfang instanceof ABSCHLUSS){
@@ -21,7 +21,7 @@ public class LISTE
             return false;
         }
     }
-    
+
     public KNOTEN anfangGeben(){
         if (this.istLeer()){
             return null;
@@ -30,41 +30,42 @@ public class LISTE
             return anfang;
         }
     }
-    
+
     public int anzahlGeben(){
         return anfang.anzahlGeben();
     }
-    
+
     //EinfügenEntfernen
-    //letztesElementLöschen
-    
+
     //anfangEntfernen
     public DATENELEMENT anfangEntfernen(DATENELEMENT daten){
         DATENELEMENT entfernt;
         entfernt = anfang.datenGeben();
         anfang = anfang.nachfolgerGeben();
         return entfernt;
-        
+
     }
-        
+
     //bestimmtesEntfernen
-    
+    public boolean bestimmtesEntfernen(DATENELEMENT daten){
+            anfang=anfang.bestimmtesEntfernen(daten);
+    }
+
     //anPlatzEinfügen
-    
+
     //sortiertEinfügen
-    
+
     public void endeEinfügen(DATENELEMENT datenNeu)
     {
         anfang = anfang.endeEinfügen(datenNeu);
     }
-    
+
     //andere
     public boolean suchen(DATENELEMENT datenDrin)
     {
         return anfang.suchen(datenDrin);
     }
-    
+
     //alleAusgeben
-    
-    
+
 }
