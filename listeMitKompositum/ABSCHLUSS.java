@@ -15,14 +15,11 @@ class ABSCHLUSS extends KNOTEN
     }
     
     public int anzahlGeben(){
-        
-        //TODO
         return 0;
     }
     
     public boolean suchen(DATENELEMENT datenDrin){
-        //TODO
-        return true; 
+        return false; 
     }
     
      public DATENELEMENT datenGeben(){
