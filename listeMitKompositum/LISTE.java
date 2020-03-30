@@ -37,6 +37,7 @@ public class LISTE
     }
 
     //bestimmtesEntfernen
+
     public void bestimmtesEntfernen(DATENELEMENT daten){
         anfang=anfang.bestimmtesEntfernen(daten);
     }
