@@ -1,7 +1,5 @@
 package listeOhneKompositum;
 
-
-
 import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
@@ -34,10 +32,22 @@ public class LISTETest
     {
         liste = new listeOhneKompositum.LISTE();
     }
-    
+
     @Test 
     public void testIstLeer(){
-     assertTrue(liste.istLeer());   
+        KNOTEN k1= new KNOTEN();
+        assertTrue(liste.istLeer()); 
+        liste.anfangSetzen(k1);
+        assertFalse(liste.istLeer());
+    }
+
+    @Test
+    public void testLetztesElementEntfernen(){
+        KNOTEN k2= new KNOTEN();
+        KNOTEN k1= new KNOTEN(k2, null);
+        liste.anfangSetzen(k1);
+        liste.letztesElementLöschen();
+        assertEquals(liste.anzahlGeben(),1);
     }
 
     /**

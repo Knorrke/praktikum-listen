@@ -45,8 +45,18 @@ public class LISTE
        return anfang; 
     }
 
+    //anfangSetzen
+    public void anfangSetzen(KNOTEN anfangNeu){
+    anfang=anfangNeu;
+    }
+    
     //anzahlGeben
     public int anzahlGeben() {
         return anfang.anzahlGeben();
+    }
+    
+    //letzesElementLöschen
+    public void letztesElementLöschen(){
+        anfang.letztesElementLöschen();
     }
 }
