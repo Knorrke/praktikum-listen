@@ -10,13 +10,12 @@ abstract class KNOTEN
     {
     }
     
+    public abstract DATENELEMENT datenGeben();
+    public abstract KNOTEN nachfolgerGeben();
     public abstract int anzahlGeben();
     public abstract boolean suchen(DATENELEMENT datenDrin);
     public abstract DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu); 
     public abstract boolean istLeer();
-    public abstract KNOTEN nachfolgerGeben();
-    public abstract DATENELEMENT datenGeben();
     public abstract String alleAusgeben();
-    
-    
+    public abstract DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT element); 
 }

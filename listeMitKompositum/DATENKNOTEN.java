@@ -49,4 +49,14 @@ class DATENKNOTEN extends KNOTEN
     public String alleAusgeben(){
         return daten.toString.concat(nachfolger.alleAusgeben());
     }
+
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT daten) {
+        if (platz == 0) {
+            return new DATENKNOTEN(this, daten);
+        } else {
+            nachfolger = nachfolger.anPlatzEinfügen(platz - 1, daten);
+            return this;
+        }
+
+    }
 }
