@@ -8,14 +8,29 @@ class KUNDE
 {
     KUNDE nachfolger;
     String name;
-    
-    KUNDE() {
-        //TODO
+
+    KUNDE(String newName) {
+        name= newName;
     }
-    
+
     //getter
-    
+    String getName(){
+        return name;
+    }
+
+    KUNDE getNachfolger(){
+        return nachfolger;
+    }
     //setter
-    
+    void setNachfolger(KUNDE newNachfolger){
+        nachfolger= newNachfolger;
+    }
+
+    void setName(String newName){
+        name= newName;
+    }
     //ausgeben
+    void Ausgeben() {
+        System.out.println("Ich bin " + name);
+    }
 }
