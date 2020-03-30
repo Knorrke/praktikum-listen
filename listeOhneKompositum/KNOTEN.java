@@ -26,11 +26,18 @@ class KNOTEN
     //datenSetzen
 
     //datenGeben
-    
-    //anzahlGeben
-    
-    //amEndeEinfügen
-    
-    //letztesElementLöschen
 
+    //anzahlGeben
+
+    //amEndeEinfügen
+
+    //letztesElementLöschen
+    public KNOTEN letztesElementLöschen(){
+        if(nachfolger==null){
+            return null;
+        }
+        else{
+            return nachfolger.letztesElementLöschen();
+        }
+    }
 }
