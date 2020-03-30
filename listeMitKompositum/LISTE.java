@@ -14,21 +14,11 @@ public class LISTE
 
     //GetterSetter
     public boolean istLeer(){
-        if (anfang instanceof ABSCHLUSS){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return anfang.istLeer();
     }
 
     public KNOTEN anfangGeben(){
-        if (this.istLeer()){
-            return null;
-        }
-        else {
-            return anfang;
-        }
+        return anfang;
     }
 
     public int anzahlGeben(){
@@ -48,13 +38,11 @@ public class LISTE
 
     //bestimmtesEntfernen
     public boolean bestimmtesEntfernen(DATENELEMENT daten){
-            anfang=anfang.bestimmtesEntfernen(daten);
+        anfang=anfang.bestimmtesEntfernen(daten);
     }
 
     //anPlatzEinfügen
-
     //sortiertEinfügen
-
     public void endeEinfügen(DATENELEMENT datenNeu)
     {
         anfang = anfang.endeEinfügen(datenNeu);

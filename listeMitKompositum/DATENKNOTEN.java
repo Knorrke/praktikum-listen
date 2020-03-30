@@ -24,6 +24,10 @@ class DATENKNOTEN extends KNOTEN
     public int anzahlGeben(){
         return nachfolger.anzahlGeben() + 1;
     }
+    
+    public boolean istLeer(){
+        return false;
+    }
 
     public boolean suchen(DATENELEMENT datenDrin){
         if (daten == datenDrin){
@@ -42,7 +46,7 @@ class DATENKNOTEN extends KNOTEN
         return nachfolger;
     }
 
-    public DATENKNOTEN bestimmtesEntfernen(DATENELEMENT daten){
+    public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){
         if(this.daten=daten){
             return nachfolgerGeben();
         }
