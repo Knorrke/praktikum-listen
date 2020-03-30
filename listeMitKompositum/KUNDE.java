@@ -16,11 +16,12 @@ class KUNDE implements DATENELEMENT
     }
     
     public int Vergleichen(DATENELEMENT vergleichsObjekt) {
-        if (!vergleichsobjekt instanceof KUNDE) {
+        if (!(vergleichsObjekt instanceof KUNDE)) {
             return 0;
         }
         
-        return name.compareToIgnoreCase(vergleichsObjekt);
+        KUNDE andererKunde = (KUNDE) vergleichsObjekt;
+        return name.compareToIgnoreCase(andererKunde.getName());
     }
     
     //ausgeben

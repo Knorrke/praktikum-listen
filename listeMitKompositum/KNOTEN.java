@@ -10,6 +10,8 @@ abstract class KNOTEN
     {
     }
     
+    public abstract DATENELEMENT datenGeben();
+    public abstract KNOTEN nachfolgerGeben();
     public abstract int anzahlGeben();
     public abstract boolean suchen(DATENELEMENT datenDrin);
     public abstract DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu); 
