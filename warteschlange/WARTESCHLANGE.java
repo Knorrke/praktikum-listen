@@ -7,30 +7,35 @@ public class WARTESCHLANGE
 {
     KUNDE anfang;
     KUNDE ende;
-    
+
     //neue leere Warteschlange
     public WARTESCHLANGE()
     {
         anfang = null;
         ende = null;
     }
-    
+
     //am Ende einfügen
     public void amEndeEinfuegen(KUNDE neuesEnde){
-        ende.setNachfolger(neuesEnde);
+        if (ende != null){
+            ende.setNachfolger(neuesEnde);
+        }
+        else {
+            anfang = neuesEnde;
+        }
         ende = neuesEnde;
         return;
     }
-    
+
     //vorneentfernen
     public KUNDE vorneEntfernen(){
         KUNDE alterAnfang;
         alterAnfang = anfang;       
         anfang = alterAnfang.getNachfolger();
         return alterAnfang;
-        
+
     }
-    
+
     //alleausgeben
     void AlleAusgeben() {
         KUNDE aktuellerKunde = anfang;
