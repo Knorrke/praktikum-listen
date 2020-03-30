@@ -31,4 +31,13 @@ class DATENKNOTEN extends KNOTEN
         //TODO
         return true; 
     }
+    
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT daten) {
+        if (platz == 0) {
+            return new DATENKNOTEN(this, daten);
+        } else {
+            nachfolger = nachfolger.anPlatzEinfügen(platz - 1, daten);
+            return this;
+        }
+    }
 }

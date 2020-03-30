@@ -24,4 +24,8 @@ class ABSCHLUSS extends KNOTEN
         //TODO
         return true; 
     }
+    
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT datenNeu) {
+        return new DATENKNOTEN(this, datenNeu);
+    }
 }
