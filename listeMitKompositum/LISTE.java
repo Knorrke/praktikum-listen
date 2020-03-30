@@ -13,17 +13,40 @@ public class LISTE
     }
     
     //GetterSetter
-    //istLeer
+    public boolean istLeer(){
+        if (anfang instanceof ABSCHLUSS){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     
-    //anfangGeben
+    public KNOTEN anfangGeben(){
+        if (this.istLeer()){
+            return null;
+        }
+        else {
+            return anfang;
+        }
+    }
     
-    //anzahlGeben
+    public int anzahlGeben(){
+        return anfang.anzahlGeben();
+    }
     
     //EinfügenEntfernen
     //letztesElementLöschen
     
     //anfangEntfernen
-    
+    public DATENELEMENT anfangEntfernen(DATENELEMENT daten){
+        DATENELEMENT entfernt;
+        entfernt = anfang.datenGeben();
+        anfang = anfang.nachfolgerGeben();
+        return entfernt;
+        
+    }
+        
     //bestimmtesEntfernen
     
     //anPlatzEinfügen
@@ -39,7 +62,10 @@ public class LISTE
     }
     
     //andere
-    //suchen
+    public boolean suchen(DATENELEMENT datenDrin)
+    {
+        return anfang.suchen(datenDrin);
+    }
     
     //alleAusgeben
     
