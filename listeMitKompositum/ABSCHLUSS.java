@@ -8,4 +8,20 @@ class ABSCHLUSS extends KNOTEN
     ABSCHLUSS()
     {
     }
+    
+    public DATENKNOTEN endeEinfügen(DATENELEMENT datenNeu){
+        return new DATENKNOTEN (this, datenNeu);
+        
+    }
+    
+    public int anzahlGeben(){
+        
+        //TODO
+        return 0;
+    }
+    
+    public boolean suchen(DATENELEMENT datenDrin){
+        //TODO
+        return true; 
+    }
 }
