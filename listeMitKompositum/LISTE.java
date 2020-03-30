@@ -41,6 +41,7 @@ public class LISTE
         return entfernt;
         
     }
+
     //bestimmtesEntfernen
 
     //anPlatzEinfügen
