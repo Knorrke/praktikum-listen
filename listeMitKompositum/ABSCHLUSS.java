@@ -24,4 +24,12 @@ class ABSCHLUSS extends KNOTEN
         //TODO
         return true; 
     }
+    
+     public DATENELEMENT datenGeben(){
+        return null;
+    }
+    
+    public KNOTEN nachfolgerGeben(){
+        return this;
+    }
 }

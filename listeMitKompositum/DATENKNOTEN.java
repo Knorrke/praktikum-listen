@@ -31,4 +31,11 @@ class DATENKNOTEN extends KNOTEN
         //TODO
         return true; 
     }
+    
+    public DATENELEMENT datenGeben(){
+        return daten;
+    }
+    public KNOTEN nachfolgerGeben(){
+        return nachfolger;
+    }
 }
