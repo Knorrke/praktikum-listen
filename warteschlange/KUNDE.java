@@ -18,4 +18,7 @@ class KUNDE
     //setter
     
     //ausgeben
+    void Ausgeben() {
+        System.out.println("Ich bin " + name);
+    }
 }

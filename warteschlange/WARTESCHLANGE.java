@@ -18,4 +18,11 @@ public class WARTESCHLANGE
     //vorneentfernen
     
     //alleausgeben
+    void AlleAusgeben() {
+        KUNDE aktuellerKunde = anfang;
+        while (aktuellerKunde != null) {
+            aktuellerKunde.Ausgeben();
+            aktuellerKunde = aktuellerKunde.getNachfolger();
+        }
+    }
 }
