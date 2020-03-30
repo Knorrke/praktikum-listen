@@ -8,9 +8,11 @@ public class WARTESCHLANGE
     KUNDE anfang;
     KUNDE ende;
     
+    //neue leere Warteschlange
     public WARTESCHLANGE()
     {
-        //TODO
+        anfang = null;
+        ende = null;
     }
     
     public void amEndeEinfuegen(KUNDE neuesEnde){
