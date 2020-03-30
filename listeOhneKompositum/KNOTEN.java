@@ -47,9 +47,22 @@ class KNOTEN
     }
 
     //anzahlGeben
-
+    public int anzahlGeben() {
+        if (nachfolger == null) {
+            return 1;
+        } else {
+            return 1 + nachfolger.anzahlGeben();
+        }
+    }
     //amEndeEinfügen
 
     //letztesElementLöschen
-
+    public KNOTEN letztesElementLöschen(){
+        if(nachfolger==null){
+            return null;
+        }
+        else{
+            return nachfolger.letztesElementLöschen();
+        }
+    }
 }
