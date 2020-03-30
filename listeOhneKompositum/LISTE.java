@@ -29,7 +29,7 @@ public class LISTE
         if(!istLeer()){
             anfang.amEndeEinfuegen(neueDaten);
         } else{
-            KNOTEN neuerAnfang = new Knoten(anfang, neueDaten);
+            KNOTEN neuerAnfang = new KNOTEN(anfang, neueDaten);
             anfang = neuerAnfang;
         }
     }
