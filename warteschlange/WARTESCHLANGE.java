@@ -10,5 +10,10 @@ public class WARTESCHLANGE
     
     public WARTESCHLANGE()
     {
+        //TODO
     }
+    
+    //AmEndeeinfügen
+    
+    //vorneentfernen
 }

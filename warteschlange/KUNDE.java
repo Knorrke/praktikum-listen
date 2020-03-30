@@ -10,6 +10,10 @@ class KUNDE
     String name;
     
     KUNDE() {
-        
+        //TODO
     }
+    
+    //getter
+    
+    //setter
 }
