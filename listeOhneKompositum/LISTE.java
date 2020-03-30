@@ -7,6 +7,7 @@ public class LISTE
     KNOTEN anfang;
 
     public LISTE()
+    
     {
         anfang = null;
     }
