@@ -22,6 +22,13 @@ public class WARTESCHLANGE
     }
     
     //vorneentfernen
+    public KUNDE vorneEntfernen(){
+        KUNDE alterAnfang;
+        alterAnfang = anfang;       
+        anfang = alterAnfang.getNachfolger();
+        return alterAnfang;
+        
+    }
     
     //alleausgeben
     void AlleAusgeben() {
