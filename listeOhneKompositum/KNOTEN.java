@@ -54,21 +54,18 @@ class KNOTEN
             return 1 + nachfolger.anzahlGeben();
         }
     }
-    //amEndeEinfügen
 
+    //amEndeEinfügen
     void amEndeEinfuegen(DATENELEMENT neueDaten){
         if(nachfolger == null){
             nachfolger = new KNOTEN(null, neueDaten);
         } else{
             nachfolger.amEndeEinfuegen(neueDaten);
         }
-        
+
     }
-    
-    //letztesElementLöschen
 
     //letztesElementLöschen
-
     public void letztesElementLöschen(){
         if(nachfolger.nachfolgerGeben()==null){
             nachfolgerSetzen(null);

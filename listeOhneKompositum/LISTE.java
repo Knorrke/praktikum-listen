@@ -7,7 +7,7 @@ public class LISTE
     KNOTEN anfang;
 
     public LISTE()
-    
+
     {
         anfang = null;
     }
@@ -50,21 +50,27 @@ public class LISTE
 
     //anfangGeben
     public KNOTEN anfangGeben() {
-       return anfang; 
+        return anfang; 
     }
 
     //anfangSetzen
     public void anfangSetzen(KNOTEN anfangNeu){
-    anfang=anfangNeu;
+        anfang=anfangNeu;
     }
-    
+
     //anzahlGeben
     public int anzahlGeben() {
-        return anfang.anzahlGeben();
+        if (!istLeer()){
+            return anfang.anzahlGeben();
+        }   
+        return 0;
     }
-    
+
     //letzesElementLöschen
     public void letztesElementLöschen(){
-        anfang.letztesElementLöschen();
+        if (!istLeer()){
+            anfang.letztesElementLöschen();
+        }
+        return;
     }
 }
