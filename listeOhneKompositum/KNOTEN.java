@@ -55,7 +55,7 @@ class KNOTEN
         }
     }
     //amEndeEinfügen
-<<<<<<< HEAD
+
     void amEndeEinfuegen(DATENELEMENT neueDaten){
         if(nachfolger == null){
             nachfolger = new KNOTEN(null, neueDaten);
@@ -66,16 +66,15 @@ class KNOTEN
     }
     
     //letztesElementLöschen
-=======
->>>>>>> 64cb6a8330e849e8be33ddd76d4dd2915c169dc0
 
     //letztesElementLöschen
-    public KNOTEN letztesElementLöschen(){
-        if(nachfolger==null){
-            return null;
+
+    public void letztesElementLöschen(){
+        if(nachfolger.nachfolgerGeben()==null){
+            nachfolgerSetzen(null);
         }
         else{
-            return nachfolger.letztesElementLöschen();
+            nachfolger.letztesElementLöschen();
         }
     }
 }

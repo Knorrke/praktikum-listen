@@ -25,7 +25,7 @@ public class LISTE
     }
 
     //endeEinfügen
-    public amEndeEinfuegen(DATENELEMENT neueDaten){
+    public void amEndeEinfuegen(DATENELEMENT neueDaten){
         if(!istLeer()){
             anfang.amEndeEinfuegen(neueDaten);
         } else{
