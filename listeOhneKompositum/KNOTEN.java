@@ -9,26 +9,51 @@ class KNOTEN
     KNOTEN nachfolger;
     DATENELEMENT daten;
 
+    //Konstruktoren
     KNOTEN()
     {
-        //todo
+        nachfolger = null;
+        daten = null;
     }
 
     KNOTEN(KNOTEN neuerNachfolger, DATENELEMENT neueDaten)
     {
-        //todo
+        nachfolger = neuerNachfolger;
+        daten = neueDaten;
     }
 
-    //nachfolgerSetzen
+    //Setter
+    public void nachfolgerSetzen (KNOTEN neuerNachfolger)
+    {
+        nachfolger = neuerNachfolger;
+        return;
+    }
 
-    //nachfolgerGeben
+    public void datenSetzen (DATENELEMENT neueDaten)
+    {
+        daten = neueDaten;
+        return;
+    }
 
-    //datenSetzen
+    //Getter
+    public KNOTEN nachfolgerGeben()
+    {
+        return nachfolger;
+    }
 
-    //datenGeben
+    public DATENELEMENT datenGeben()
+    {
+        return daten;
+    }
 
     //anzahlGeben
-
+    public int anzahlGeben() {
+        if (nachfolger == null) {
+            return 1;
+        } else {
+            return 1 + nachfolger.anzahlGeben();
+        }
+    }
     //amEndeEinfügen
 
     //letztesElementLöschen

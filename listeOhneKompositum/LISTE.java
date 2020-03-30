@@ -7,6 +7,7 @@ public class LISTE
     KNOTEN anfang;
 
     public LISTE()
+    
     {
         anfang = null;
     }
@@ -30,5 +31,7 @@ public class LISTE
     //anfangGeben
 
     //anzahlGeben
-
+    public int anzahlGeben() {
+        return anfang.anzahlGeben();
+    }
 }
