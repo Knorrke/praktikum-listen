@@ -6,6 +6,9 @@ package warteschlange;
  */
 class KUNDE
 {
+    KUNDE nachfolger;
+    String name;
+    
     KUNDE() {
         
     }

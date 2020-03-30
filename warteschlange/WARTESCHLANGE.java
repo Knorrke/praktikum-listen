@@ -5,6 +5,9 @@ package warteschlange;
  */
 public class WARTESCHLANGE
 {
+    KUNDE anfang;
+    KUNDE ende;
+    
     public WARTESCHLANGE()
     {
     }
