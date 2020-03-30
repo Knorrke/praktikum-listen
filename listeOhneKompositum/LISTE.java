@@ -4,7 +4,22 @@ package listeOhneKompositum;
  */
 public class LISTE
 {
+    KNOTEN anfang;
+        
+    
     public LISTE()
     {
+        anfang = null;
     }
+    
+    //istLeer
+    
+    //endeEinfügen
+    
+    //anfangEntfernen
+    
+    //anfangGeben
+        
+    //anzahlGeben
+   
 }

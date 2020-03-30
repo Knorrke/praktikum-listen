@@ -6,7 +6,31 @@ package listeOhneKompositum;
  */
 class KNOTEN
 {
+    KNOTEN nachfolger;
+    DATENELEMENT daten;
+
     KNOTEN()
     {
+        //todo
     }
+
+    KNOTEN(KNOTEN neuerNachfolger, DATENELEMENT neueDaten)
+    {
+        //todo
+    }
+
+    //nachfolgerSetzen
+
+    //nachfolgerGeben
+
+    //datenSetzen
+
+    //datenGeben
+    
+    //anzahlGeben
+    
+    //amEndeEinfügen
+    
+    //letztesElementLöschen
+
 }

@@ -46,7 +46,6 @@ public class WARTESCHLANGE
         alterAnfang = anfang;       
         anfang = alterAnfang.getNachfolger();
         return alterAnfang;
-
     }
 
     //alleausgeben
