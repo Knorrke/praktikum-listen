@@ -9,24 +9,37 @@ class KNOTEN
     KNOTEN nachfolger;
     DATENELEMENT daten;
 
+    //Konstruktoren
     KNOTEN()
     {
-        //todo
+        nachfolger = null;
+        daten = null;
     }
 
     KNOTEN(KNOTEN neuerNachfolger, DATENELEMENT neueDaten)
     {
-        //todo
+        nachfolger = neuerNachfolger;
+        daten = neueDaten;
     }
 
-    //nachfolgerSetzen
+    
+    //Setter
+    public void nachfolgerSetzen (KNOTEN neuerNachfolger)
+    {
+        nachfolger = neuerNachfolger;
+        return;
+    }
 
-    //nachfolgerGeben
+    //Getter
+    public KNOTEN nachfolgerGeben()
+    {
+        return nachfolger;
+    }
 
     //datenSetzen
 
     //datenGeben
-    
+
     //anzahlGeben
     public int anzahlGeben() {
         if (nachfolger == null) {
@@ -35,9 +48,8 @@ class KNOTEN
             return 1 + nachfolger.anzahlGeben();
         }
     }
-    
     //amEndeEinfügen
-    
+
     //letztesElementLöschen
 
 }
