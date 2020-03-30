@@ -19,7 +19,6 @@ class ABSCHLUSS extends KNOTEN
     }
     
     public boolean suchen(DATENELEMENT datenDrin){
-        //TODO
-        return true; 
+        return false; 
     }
 }

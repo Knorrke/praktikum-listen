@@ -52,7 +52,10 @@ public class LISTE
     }
     
     //andere
-    //suchen
+    public boolean suchen(DATENELEMENT datenDrin)
+    {
+        return anfang.suchen(datenDrin);
+    }
     
     //alleAusgeben
     
