@@ -16,4 +16,6 @@ public class WARTESCHLANGE
     //AmEndeeinfügen
     
     //vorneentfernen
+    
+    //alleausgeben
 }

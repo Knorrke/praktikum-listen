@@ -16,4 +16,6 @@ class KUNDE
     //getter
     
     //setter
+    
+    //ausgeben
 }
