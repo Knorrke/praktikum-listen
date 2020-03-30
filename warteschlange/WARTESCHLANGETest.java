@@ -12,8 +12,9 @@ import org.junit.Test;
  */
 public class WARTESCHLANGETest
 {
-    private warteschlange.WARTESCHLANGE schlange;
-
+    private WARTESCHLANGE schlange;
+    private KUNDE helga;
+    private KUNDE hans;
     /**
      * Konstruktor fuer die Test-Klasse WARTESCHLANGETest
      */
@@ -30,15 +31,22 @@ public class WARTESCHLANGETest
     public void setUp()
     {
         schlange = new warteschlange.WARTESCHLANGE();
+        KUNDE hans = new KUNDE("Hans");
+        KUNDE helga = new KUNDE("Helga");
     }
     
     @Test
     public void einfuegenTest() {
-        KUNDE hans = new KUNDE("Hans");
-        KUNDE helga = new KUNDE("Helga");
         schlange.amEndeEinfuegen(hans);
         schlange.amEndeEinfuegen(helga);
         schlange.AlleAusgeben();
+    }
+    
+    @Test
+    public void entfernenTest(){
+        schlange.amEndeEinfuegen(hans);
+        schlange.amEndeEinfuegen(helga);
+        schlange.vorneEntfernen();
     }
 
     /**
