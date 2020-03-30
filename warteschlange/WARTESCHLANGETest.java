@@ -31,6 +31,15 @@ public class WARTESCHLANGETest
     {
         schlange = new warteschlange.WARTESCHLANGE();
     }
+    
+    @Test
+    public void einfuegenTest() {
+        KUNDE hans = new KUNDE("Hans");
+        KUNDE helga = new KUNDE("Helga");
+        schlange.amEndeEinfuegen(hans);
+        schlange.amEndeEinfuegen(helga);
+        schlange.AlleAusgeben();
+    }
 
     /**
      * Gibt das Testgerüst wieder frei.
