@@ -24,7 +24,7 @@ class DATENKNOTEN extends KNOTEN
     public int anzahlGeben(){
         return nachfolger.anzahlGeben() + 1;
     }
-    
+
     public boolean istLeer(){
         return false;
     }
@@ -37,11 +37,16 @@ class DATENKNOTEN extends KNOTEN
             return nachfolger.suchen(datenDrin);   
         }
     }
-    
+
     public DATENELEMENT datenGeben(){
         return daten;
     }
+
     public KNOTEN nachfolgerGeben(){
         return nachfolger;
+    }
+
+    public String alleAusgeben(){
+        return daten.toString.concat(nachfolger.alleAusgeben());
     }
 }

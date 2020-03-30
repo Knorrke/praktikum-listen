@@ -26,8 +26,6 @@ public class LISTE
     }
 
     //EinfügenEntfernen
-    //letztesElementLöschen
-
     //anfangEntfernen
     public DATENELEMENT anfangEntfernen(DATENELEMENT daten){
         DATENELEMENT entfernt;
@@ -54,6 +52,9 @@ public class LISTE
         return anfang.suchen(datenDrin);
     }
 
-    //alleAusgeben
+    public String alleAusgeben()
+    {
+        return anfang.alleAusgeben();
+    }
 
 }

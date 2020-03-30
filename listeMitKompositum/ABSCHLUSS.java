@@ -32,4 +32,8 @@ class ABSCHLUSS extends KNOTEN
     public KNOTEN nachfolgerGeben(){
         return this;
     }
+    
+    public String alleAusgeben(){
+        return "";
+    }
 }
