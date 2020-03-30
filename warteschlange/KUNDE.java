@@ -30,4 +30,7 @@ class KUNDE
         name= newName;
     }
     //ausgeben
+    void Ausgeben() {
+        System.out.println("Ich bin " + name);
+    }
 }
