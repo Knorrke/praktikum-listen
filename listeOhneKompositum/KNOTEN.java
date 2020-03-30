@@ -30,6 +30,14 @@ class KNOTEN
     //anzahlGeben
     
     //amEndeEinfügen
+    void amEndeEinfuegen(DATENELEMENT neueDaten){
+        if(nachfolger == null){
+            nachfolger = new KNOTEN(null, neueDaten);
+        } else{
+            nachfolger.amEndeEinfuegen(neueDaten);
+        }
+        
+    }
     
     //letztesElementLöschen
 

@@ -15,7 +15,14 @@ public class LISTE
     //istLeer
     
     //endeEinfügen
-    
+    public amEndeEinfuegen(DATENELEMENT neueDaten){
+        if(!istLeer()){
+            anfang.amEndeEinfuegen(neueDaten);
+        } else{
+            KNOTEN neuerAnfang = new Knoten(anfang, neueDaten);
+            anfang = neuerAnfang;
+        }
+    }
     //anfangEntfernen
     
     //anfangGeben
