@@ -26,6 +26,18 @@ public class LISTE
     //endeEinfügen
 
     //anfangEntfernen
+    public void anfangEntfernen()
+    {
+        if (anfang != null){
+            if (anfang.nachfolger != null){
+                anfang = anfang.nachfolger;
+            }
+            else {
+                anfang = null;
+            }
+        }
+        return;
+    }
 
     //anfangGeben
 
