@@ -15,6 +15,7 @@ public class WARTESCHLANGE
         ende = null;
     }
     
+    //am Ende einfügen
     public void amEndeEinfuegen(KUNDE neuesEnde){
         ende.setNachfolger(neuesEnde);
         ende = neuesEnde;
