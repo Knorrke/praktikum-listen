@@ -15,8 +15,6 @@ class ABSCHLUSS extends KNOTEN
     }
     
     public int anzahlGeben(){
-        
-        //TODO
         return 0;
     }
     

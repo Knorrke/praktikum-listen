@@ -23,8 +23,7 @@ class DATENKNOTEN extends KNOTEN
     }
     
     public int anzahlGeben(){
-        //TODO
-        return 0;
+        return nachfolger.anzahlGeben() + 1;
     }
     
     public boolean suchen(DATENELEMENT datenDrin){
