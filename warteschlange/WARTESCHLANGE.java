@@ -24,6 +24,9 @@ public class WARTESCHLANGE
     
     //vorneentfernen
     public KUNDE vorneEntfernen(){
+        if(anfang == null){
+            return null;
+        }
         KUNDE alterAnfang;
         alterAnfang = anfang;       
         anfang = alterAnfang.getNachfolger();
