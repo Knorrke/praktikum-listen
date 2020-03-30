@@ -8,11 +8,14 @@ public class WARTESCHLANGE
     KUNDE anfang;
     KUNDE ende;
     
+    //neue leere Warteschlange
     public WARTESCHLANGE()
     {
-        //TODO
+        anfang = null;
+        ende = null;
     }
     
+    //am Ende einfügen
     public void amEndeEinfuegen(KUNDE neuesEnde){
         ende.setNachfolger(neuesEnde);
         ende = neuesEnde;
