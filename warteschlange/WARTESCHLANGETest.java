@@ -40,6 +40,8 @@ public class WARTESCHLANGETest
         schlange.amEndeEinfuegen(hans);
         schlange.amEndeEinfuegen(helga);
         schlange.AlleAusgeben();
+        assertEquals(schlange.getAnfang(), hans);
+        assertEquals(schlange.getEnde(), helga);
     }
     
     @Test
@@ -47,6 +49,7 @@ public class WARTESCHLANGETest
         schlange.amEndeEinfuegen(hans);
         schlange.amEndeEinfuegen(helga);
         schlange.vorneEntfernen();
+        assertEquals(schlange.getAnfang(), helga);
     }
 
     /**
