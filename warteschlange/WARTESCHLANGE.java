@@ -16,6 +16,13 @@ public class WARTESCHLANGE
     //AmEndeeinfügen
     
     //vorneentfernen
+    public KUNDE vorneEntfernen(){
+        KUNDE alterAnfang;
+        alterAnfang = anfang;       
+        anfang = alterAnfang.getNachfolger();
+        return alterAnfang;
+        
+    }
     
     //alleausgeben
 }
