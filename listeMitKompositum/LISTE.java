@@ -32,15 +32,23 @@ public class LISTE
         entfernt = anfang.datenGeben();
         anfang = anfang.nachfolgerGeben();
         return entfernt;
-        
+
     }
 
     //bestimmtesEntfernen
+
+    public void bestimmtesEntfernen(DATENELEMENT daten){
+        anfang=anfang.bestimmtesEntfernen(daten);
+    }
 
     //anPlatzEinfügen
     public void anPlatzEinfügen(int platz, DATENELEMENT datenNeu) {
         anfang = anfang.anPlatzEinfügen(platz, datenNeu);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ac54799e329abcbbef1b301b1fadc9251c5afa6
     //sortiertEinfügen
 
     public void endeEinfügen(DATENELEMENT datenNeu)

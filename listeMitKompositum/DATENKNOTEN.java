@@ -46,6 +46,7 @@ class DATENKNOTEN extends KNOTEN
         return nachfolger;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public String alleAusgeben(){
         return daten.toString.concat(nachfolger.alleAusgeben());
@@ -69,5 +70,25 @@ class DATENKNOTEN extends KNOTEN
             return this;
         }
 >>>>>>> e9c9ece7290d0375b06581a05d5ce2410df52305
+=======
+
+    public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){
+        if(this.daten==daten){
+            return nachfolgerGeben();
+        }
+        else {
+            nachfolger.bestimmtesEntfernen(daten);
+            return this;
+        }
+    }
+
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT daten) {
+        if (platz == 0) {
+            return new DATENKNOTEN(this, daten);
+        } else {
+            nachfolger = nachfolger.anPlatzEinfügen(platz - 1, daten);
+            return this;
+        }
+>>>>>>> 4ac54799e329abcbbef1b301b1fadc9251c5afa6
     }
 }
