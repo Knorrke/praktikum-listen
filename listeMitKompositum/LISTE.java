@@ -14,12 +14,7 @@ public class LISTE
 
     //GetterSetter
     public boolean istLeer(){
-        if (anfang instanceof ABSCHLUSS){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return anfang.istLeer();
     }
 
     public KNOTEN anfangGeben(){

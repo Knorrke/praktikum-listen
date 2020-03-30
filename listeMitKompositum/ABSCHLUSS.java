@@ -16,6 +16,10 @@ class ABSCHLUSS extends KNOTEN
     public int anzahlGeben(){
         return 0;
     }
+    
+    public boolean istLeer(){
+        return true;
+    }
 
     public boolean suchen(DATENELEMENT datenDrin){
         return false; 

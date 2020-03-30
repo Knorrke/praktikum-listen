@@ -24,6 +24,10 @@ class DATENKNOTEN extends KNOTEN
     public int anzahlGeben(){
         return nachfolger.anzahlGeben() + 1;
     }
+    
+    public boolean istLeer(){
+        return false;
+    }
 
     public boolean suchen(DATENELEMENT datenDrin){
         if (daten == datenDrin){
