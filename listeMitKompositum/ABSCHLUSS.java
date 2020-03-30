@@ -20,4 +20,12 @@ class ABSCHLUSS extends KNOTEN
     public boolean suchen(DATENELEMENT datenDrin){
         return false; 
     }
+    
+     public DATENELEMENT datenGeben(){
+        return null;
+    }
+    
+    public KNOTEN nachfolgerGeben(){
+        return this;
+    }
 }

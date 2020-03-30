@@ -33,4 +33,11 @@ class DATENKNOTEN extends KNOTEN
             return nachfolger.suchen(datenDrin);   
         }
     }
+    
+    public DATENELEMENT datenGeben(){
+        return daten;
+    }
+    public KNOTEN nachfolgerGeben(){
+        return nachfolger;
+    }
 }

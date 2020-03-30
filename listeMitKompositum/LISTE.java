@@ -34,7 +34,13 @@ public class LISTE
     //letztesElementLöschen
 
     //anfangEntfernen
-
+    public DATENELEMENT anfangEntfernen(DATENELEMENT daten){
+        DATENELEMENT entfernt;
+        entfernt = anfang.datenGeben();
+        anfang = anfang.nachfolgerGeben();
+        return entfernt;
+        
+    }
     //bestimmtesEntfernen
 
     //anPlatzEinfügen
