@@ -45,6 +45,7 @@ class DATENKNOTEN extends KNOTEN
     public KNOTEN nachfolgerGeben(){
         return nachfolger;
     }
+<<<<<<< HEAD
 
     public String alleAusgeben(){
         return daten.toString.concat(nachfolger.alleAusgeben());
@@ -58,5 +59,15 @@ class DATENKNOTEN extends KNOTEN
             return this;
         }
 
+=======
+    
+    public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT daten) {
+        if (platz == 0) {
+            return new DATENKNOTEN(this, daten);
+        } else {
+            nachfolger = nachfolger.anPlatzEinfügen(platz - 1, daten);
+            return this;
+        }
+>>>>>>> e9c9ece7290d0375b06581a05d5ce2410df52305
     }
 }
