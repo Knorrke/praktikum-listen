@@ -29,6 +29,9 @@ public class LISTE
     //anfangEntfernen
 
     //anfangGeben
+    public KNOTEN anfangGeben() {
+       return anfang; 
+    }
 
     //anzahlGeben
     public int anzahlGeben() {
