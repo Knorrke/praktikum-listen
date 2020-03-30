@@ -33,13 +33,12 @@ class ABSCHLUSS extends KNOTEN
         return this;
     }
 
-<<<<<<< HEAD
     public String alleAusgeben(){
         return "";
-=======
+    }
+        
     public KNOTEN bestimmtesEntfernen(DATENELEMENT daten){
         return this;
->>>>>>> 4ac54799e329abcbbef1b301b1fadc9251c5afa6
     }
 
     public DATENKNOTEN anPlatzEinfügen(int platz, DATENELEMENT datenNeu) {
